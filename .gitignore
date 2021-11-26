@@ -1,0 +1,17 @@
+node_modules
+libraries
+dist
+!/dist/.gitkeep
+server/log
+log/
+.DS_Store
+.idea
+release
+log
+package-lock.json~
+.vscode
+server/src/configs/cdnResource.json
+server-hobber
+client/build
+client/.eslintcache
+.history
