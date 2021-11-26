@@ -4,15 +4,23 @@
   "private": true,
   "dependencies": {
     "@emotion/styled": "11.3.0",
-    "@reactour/tour": "0.2.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "body-scroll-lock": "4.0.0-beta.0",
+    "classnames": "^2.3.1",
     "modaaals": "0.9.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react-dom": "17.0.1",
+    "react-nice-dates": "^3.0.7",
+    "react-onclickoutside": "6.9.0",
+    "react-redux": "7.2.0",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
     "react-scripts": "4.0.3",
+    "reactour": "^1.18.0",
+    "styled-components": "^5.3.3",
+    "typescript": "^4.5.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -38,5 +46,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.37",
+    "@types/react-router": "^5.1.17",
+    "@types/reactour": "^1.18.2"
   }
 }
