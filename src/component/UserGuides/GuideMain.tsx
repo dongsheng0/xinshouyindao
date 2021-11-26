@@ -3,6 +3,7 @@ import React, { useContext, useState } from 'react'
 import { Redirect, useHistory, useLocation, useRouteMatch } from 'react-router'
 import Tour from 'reactour'
 import { TourContent } from './TourContent'
+import img1 from './assets/pc/01.jpeg'
 const steps = [
   {
     selector: '.project-switch-select',
@@ -46,6 +47,7 @@ export const GuideMain = () => {
   // }
 
   return (
+    <>
     <Tour
       className="odin-tour"
       highlightedMaskClassName="odin-tour-highlighted"
@@ -66,5 +68,7 @@ export const GuideMain = () => {
         }
       }}
     />
+    <div className="pc-page"><img  src={img1} alt=""/></div>
+    </>
   )
 }
