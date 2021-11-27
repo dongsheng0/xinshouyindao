@@ -1,15 +1,15 @@
-import App from '../App'
+import GuidePc from '../page/PcGuide'
 export const userRoutes = [
   {
     title: '个人信息',
-    path: '/app',
+    path: '/pc_guide',
     exact: true,
-    component: App,
+    component: GuidePc,
   },
   {
-    title: '个人信息',
+    title: 'pc引导',
     path: '/',
     exact: true,
-    component: App,
+    component: GuidePc,
   },
 ]

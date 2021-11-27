@@ -2,7 +2,7 @@
 import React, { useContext, useState } from 'react'
 import { Redirect, useHistory, useLocation, useRouteMatch } from 'react-router'
 import {  Toast } from 'antd-mobile'
-
+import './index.scss'
 import Tour from 'reactour'
 import { TourContent } from './TourContent'
 import img1 from './assets/pc/01.jpeg'
@@ -19,7 +19,7 @@ import img7_4 from './assets/pc/07_4.jpeg'
 import img8 from './assets/pc/08.jpeg'
 const steps = [
   {
-    selector: '.home',
+    selector: '.home-pc',
     position: [330, 130],
     content: (props: any) => (
       <TourContent className="tour_01" total={steps.length} {...props}>
@@ -28,7 +28,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home',
+    selector: '.home-pc',
     position: [670, 130],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
@@ -37,7 +37,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home',
+    selector: '.home-pc',
     position: [733, 550],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
@@ -46,7 +46,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home',
+    selector: '.home-pc',
     position: [733, 550],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
@@ -55,7 +55,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home',
+    selector: '.home-pc',
     position: [130, 260],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
@@ -64,7 +64,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home',
+    selector: '.home-pc',
     position: [690, 444],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
@@ -73,7 +73,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home',
+    selector: '.home-pc',
     position: [278, 270],
     content: (props: any) => (
       <TourContent className="tour_02"  total={steps.length} {...props}>
@@ -82,7 +82,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home',
+    selector: '.home-pc',
     position: [698, 285],
     content: (props: any) => (
       // placement="right" 
@@ -92,7 +92,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home',
+    selector: '.home-pc',
     position: [698, 368],
     content: (props: any) => (
       <TourContent className="tour_02"  total={steps.length} {...props}>
@@ -101,7 +101,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home',
+    selector: '.home-pc',
     position: [278, 270],
     content: (props: any) => (
       <TourContent className="tour_02"  total={steps.length} {...props}>
@@ -110,7 +110,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home',
+    selector: '.home-pc',
     position: [733, 550],
     content: (props: any) => (
       <TourContent className="tour_02"  total={steps.length} {...props}>
@@ -119,7 +119,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home',
+    selector: '.home-pc',
     position: [730, 146],
     content: (props: any) => (
       <TourContent className="tour_02"  total={steps.length} {...props}>
@@ -132,7 +132,7 @@ const steps = [
 /**
  * 主流程引导
  */
-export const GuideMain = () => {
+export const PCGuideMain = () => {
   const match = useRouteMatch()
   const history = useHistory()
   const location = useLocation()

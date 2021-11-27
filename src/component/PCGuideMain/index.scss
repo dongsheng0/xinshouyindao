@@ -25,7 +25,7 @@ div.zhushou-tour {
       margin-top: 0;
     }
   }
-  .home-first-step {
+  .home-pc-first-step {
     background-size: 100% 100%;
     width: 480px;
     padding: 20px;
@@ -80,6 +80,7 @@ div.zhushou-tour {
     display: flex;
     justify-content: flex-end;
     margin-top: 25px;
+    min-height: 20px;;
     .button {
       cursor: pointer;
       margin-left: 65px;

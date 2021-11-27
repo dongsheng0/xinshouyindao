@@ -15,7 +15,7 @@ export const TourNavigation: React.FC<TourNavigationProps> = ({
   close,
 }) => (
   <div className="buttons">
-    {step > 1 && (
+    {/* {step > 1 && (
       <div className="button" onClick={() => goTo(step - 2)}>
         上一步
       </div>
@@ -29,6 +29,6 @@ export const TourNavigation: React.FC<TourNavigationProps> = ({
       <div className="button" onClick={close}>
         完成
       </div>
-    )}
+    )} */}
   </div>
 )
