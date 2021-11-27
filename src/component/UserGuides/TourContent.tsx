@@ -23,9 +23,19 @@ export const TourContent: React.FC<TourContentProps> = ({
   className,
 }) => {
   return (
-    <div className={className} style={{ ...style }}>
+    <>
+      <div className="tourContent-box">
+      <div className={className}  style={{ ...style }}>
       {children}
       <TourNavigation step={step} goTo={goTo} total={total} close={close} />
+     </div>
+     <div className="out">
+          {/* <div className="in"></div> */}
     </div>
+    </div>
+      <div className="pointer-nav" onClick={() => goTo(step)}>
+        <div className='round-point'></div>
+    </div>
+    </>
   )
 }

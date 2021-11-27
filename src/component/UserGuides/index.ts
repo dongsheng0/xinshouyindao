@@ -1,3 +1,2 @@
-import './user-guide.less'
-
+import  "./index.scss";
 export * from './GuideMain'

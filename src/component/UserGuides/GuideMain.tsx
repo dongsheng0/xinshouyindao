@@ -6,7 +6,7 @@ import { TourContent } from './TourContent'
 import img1 from './assets/pc/01.jpeg'
 const steps = [
   {
-    selector: '.project-switch-select',
+    selector: '.home',
     position: [100, 500],
     content: (props: any) => (
       <TourContent className="first-tour" total={steps.length} {...props}>
@@ -15,7 +15,7 @@ const steps = [
     ),
   },
   {
-    selector: '.project-switch-select',
+    selector: '.home',
     position: [1, 500],
     content: (props: any) => (
       <TourContent className="first-tour" total={steps.length} {...props}>
@@ -49,8 +49,8 @@ export const GuideMain = () => {
   return (
     <>
     <Tour
-      className="odin-tour"
-      highlightedMaskClassName="odin-tour-highlighted"
+      className="zhushou-tour"
+      highlightedMaskClassName="zhushou-tour-highlighted"
       disableInteraction
       steps={steps}
       isOpen={true}
