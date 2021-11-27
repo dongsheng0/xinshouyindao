@@ -2,10 +2,15 @@
     color: red;
 }
 
+body{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
 
 .zhushou-tour{
     position: relative;
-    background-color: #3580fe !important;
+    background-color: transparent !important;
     border-radius: 5px;
     color: #fff;
 }
@@ -19,6 +24,37 @@ img {
     margin: 0 auto;
 }
 
+// 覆盖tour中的样式
+// 背景遮罩层
+.sc-pVTFL{
+    opacity: 0 !important;
+}
+.zs-mask{
+    opacity: 0 !important;
+}
+.hixnFv{
+    position: relative !important;
+}
+#___reactour{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
+// 气泡背景色
+// .jGVibm{
+//     background-color: transparent !important;
+// }
 
+.tour_img_01{
+    position: relative;
+    z-index: 1;
+}
+.tour_img_01_1 {
+    position: absolute;
+    z-index: 2;
+    left: 475px;
+    top: 215px;
+    width: 250px;
+}
 
