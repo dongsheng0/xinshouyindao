@@ -1,5 +1,12 @@
 
 
+
+body{
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 // 用户引导相关的css放在这里
 
 
@@ -141,7 +148,7 @@ div.zhushou-tour {
   width: 40px;
   height: 40px;
   background-position: 0 0;
-  background-image: url(./assets/cursor.png);
+  background-image: url(../../common/img/cursor.png);
   animation: guideToClick 1.2s steps(1) 0s infinite;
 }
 

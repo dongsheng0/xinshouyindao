@@ -1,0 +1,345 @@
+
+
+
+body{
+    position: relative;
+}
+.zhushou-tour{
+    position: relative;
+    background-color: transparent !important;
+    border-radius: 5px;
+    color: #fff;
+}
+img {
+    display: block;
+    width: 100%
+}
+
+.home-pc {
+    width: 1200px;
+    margin: 0 auto;
+}
+.home-h5 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+// 覆盖tour中的样式
+// 背景遮罩层
+.sc-pVTFL{
+    opacity: 0 !important;
+}
+.zs-mask{
+    opacity: 0 !important;
+}
+.hixnFv{
+    position: relative !important;
+}
+#___reactour{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+// 气泡背景色
+// .jGVibm{
+//     background-color: transparent !important;
+// }
+
+.tour_img_01{
+    position: relative;
+    z-index: 1;
+}
+.tour_img_01_1 {
+    position: absolute;
+    z-index: 2;
+    left: 475px;
+    top: 215px;
+    width: 250px;
+}
+
+
+
+
+
+// 点击按钮的动效
+.pointer-nav {
+    position: absolute;
+    bottom: -121px;
+    left: 150px;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    z-index: 3000;
+    cursor: pointer;
+  }
+  
+  .round-point {
+    width: 40px;
+    height: 40px;
+    background-position: 0 0;
+    background-image: url(../../common/img/cursor.png);
+    animation: guideToClick 1.2s steps(1) 0s infinite;
+  }
+  
+  
+  
+  @keyframes guideToClick {
+    0% {
+      background-position: 0 0
+    }
+  
+    1.5625% {
+      background-position: -40px 0
+    }
+  
+    6.25% {
+      background-position: -80px 0
+    }
+  
+    14.0625% {
+      background-position: -120px 0
+    }
+  
+    25% {
+      background-position: -160px 0
+    }
+  
+    39.0625% {
+      background-position: -200px 0
+    }
+  
+    56.25% {
+      background-position: -240px 0
+    }
+  
+    76.5625% {
+      background-position: -280px 0
+    }
+  
+    3.125% {
+      background-position: 0 -40px
+    }
+  
+    4.6875% {
+      background-position: -40px -40px
+    }
+  
+    7.8125% {
+      background-position: -80px -40px
+    }
+  
+    15.625% {
+      background-position: -120px -40px
+    }
+  
+    26.5625% {
+      background-position: -160px -40px
+    }
+  
+    40.625% {
+      background-position: -200px -40px
+    }
+  
+    57.8125% {
+      background-position: -240px -40px
+    }
+  
+    78.125% {
+      background-position: -280px -40px
+    }
+  
+    9.375% {
+      background-position: 0 -80px
+    }
+  
+    10.9375% {
+      background-position: -40px -80px
+    }
+  
+    12.5% {
+      background-position: -80px -80px
+    }
+  
+    17.1875% {
+      background-position: -120px -80px
+    }
+  
+    28.125% {
+      background-position: -160px -80px
+    }
+  
+    42.1875% {
+      background-position: -200px -80px
+    }
+  
+    59.375% {
+      background-position: -240px -80px
+    }
+  
+    79.6875% {
+      background-position: -280px -80px
+    }
+  
+    18.75% {
+      background-position: 0 -120px
+    }
+  
+    20.3125% {
+      background-position: -40px -120px
+    }
+  
+    21.875% {
+      background-position: -80px -120px
+    }
+  
+    23.4375% {
+      background-position: -120px -120px
+    }
+  
+    29.6875% {
+      background-position: -160px -120px
+    }
+  
+    43.75% {
+      background-position: -200px -120px
+    }
+  
+    60.9375% {
+      background-position: -240px -120px
+    }
+  
+    81.25% {
+      background-position: -280px -120px
+    }
+  
+    31.25% {
+      background-position: 0 -160px
+    }
+  
+    32.8125% {
+      background-position: -40px -160px
+    }
+  
+    34.375% {
+      background-position: -80px -160px
+    }
+  
+    35.9375% {
+      background-position: -120px -160px
+    }
+  
+    37.5% {
+      background-position: -160px -160px
+    }
+  
+    45.3125% {
+      background-position: -200px -160px
+    }
+  
+    62.5% {
+      background-position: -240px -160px
+    }
+  
+    82.8125% {
+      background-position: -280px -160px
+    }
+  
+    46.875% {
+      background-position: 0 -200px
+    }
+  
+    48.4375% {
+      background-position: -40px -200px
+    }
+  
+    50% {
+      background-position: -80px -200px
+    }
+  
+    51.5625% {
+      background-position: -120px -200px
+    }
+  
+    53.125% {
+      background-position: -160px -200px
+    }
+  
+    54.6875% {
+      background-position: -200px -200px
+    }
+  
+    64.0625% {
+      background-position: -240px -200px
+    }
+  
+    84.375% {
+      background-position: -280px -200px
+    }
+  
+    65.625% {
+      background-position: 0 -240px
+    }
+  
+    67.1875% {
+      background-position: -40px -240px
+    }
+  
+    68.75% {
+      background-position: -80px -240px
+    }
+  
+    70.3125% {
+      background-position: -120px -240px
+    }
+  
+    71.875% {
+      background-position: -160px -240px
+    }
+  
+    73.4375% {
+      background-position: -200px -240px
+    }
+  
+    75% {
+      background-position: -240px -240px
+    }
+  
+    85.9375% {
+      background-position: -280px -240px
+    }
+  
+    87.5% {
+      background-position: 0 -280px
+    }
+  
+    89.0625% {
+      background-position: -40px -280px
+    }
+  
+    90.625% {
+      background-position: -80px -280px
+    }
+  
+    92.1875% {
+      background-position: -120px -280px
+    }
+  
+    93.75% {
+      background-position: -160px -280px
+    }
+  
+    95.3125% {
+      background-position: -200px -280px
+    }
+  
+    96.875% {
+      background-position: -240px -280px
+    }
+  
+    98.4375% {
+      background-position: -280px -280px
+    }
+  }
