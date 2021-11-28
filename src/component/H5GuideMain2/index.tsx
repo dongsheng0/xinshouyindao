@@ -11,7 +11,7 @@ import { TourContent } from './TourContent'
 const imgLists = []
 const steps = [
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [-130, 220],
     content: (props: any) => (
       <TourContent className="tour_01" total={steps.length} {...props}>

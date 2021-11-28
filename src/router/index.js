@@ -1,3 +1,5 @@
+import Home from '../page/Home/index'
+import HomePc from '../page/Home/Home_pc'
 import PcGuide from '../page/PcGuide'
 import H5Guide1 from '../page/H5Guide1'
 import H5Guide2 from '../page/H5Guide2'
@@ -21,9 +23,15 @@ export const userRoutes = [
     component: H5Guide2,
   },
   {
-    title: 'pc引导页',
+    title: '首页',
     path: '/',
     exact: true,
-    component: PcGuide,
+    component: Home,
+  },
+  {
+    title: '首页',
+    path: '/home_pc',
+    exact: true,
+    component: HomePc,
   },
 ]

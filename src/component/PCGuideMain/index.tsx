@@ -36,7 +36,7 @@ const imgLists = {
 }
 const steps = [
   {
-    selector: '.home-pc',
+    selector: '.guide_pc',
     position: [330, 130],
     content: (props: any) => (
       <TourContent className="tour_01" total={steps.length} {...props}>
@@ -45,7 +45,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-pc',
+    selector: '.guide_pc',
     position: [670, 130],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
@@ -54,7 +54,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-pc',
+    selector: '.guide_pc',
     position: [733, 550],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
@@ -63,7 +63,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-pc',
+    selector: '.guide_pc',
     position: [733, 550],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
@@ -72,7 +72,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-pc',
+    selector: '.guide_pc',
     position: [130, 260],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
@@ -81,7 +81,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-pc',
+    selector: '.guide_pc',
     position: [690, 444],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
@@ -90,7 +90,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-pc',
+    selector: '.guide_pc',
     position: [278, 270],
     content: (props: any) => (
       <TourContent className="tour_02"  total={steps.length} {...props}>
@@ -99,7 +99,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-pc',
+    selector: '.guide_pc',
     position: [698, 285],
     content: (props: any) => (
       // placement="right" 
@@ -109,7 +109,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-pc',
+    selector: '.guide_pc',
     position: [698, 368],
     content: (props: any) => (
       <TourContent className="tour_02"  total={steps.length} {...props}>
@@ -118,7 +118,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-pc',
+    selector: '.guide_pc',
     position: [278, 270],
     content: (props: any) => (
       <TourContent className="tour_02"  total={steps.length} {...props}>
@@ -127,7 +127,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-pc',
+    selector: '.guide_pc',
     position: [733, 550],
     content: (props: any) => (
       <TourContent className="tour_02"  total={steps.length} {...props}>
@@ -136,7 +136,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-pc',
+    selector: '.guide_pc',
     position: [730, 146],
     content: (props: any) => (
       <TourContent className="tour_02"  total={steps.length} {...props}>

@@ -24,7 +24,7 @@ import img13 from './img/13.jpeg'
 const imgLists = [img0, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13]
 const steps = [
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [-130, 220],
     content: (props: any) => (
       <TourContent className="tour_01" total={steps.length} {...props}>
@@ -33,7 +33,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [30, 920],
     content: (props: any) => (
       <TourContent className="tour_01" total={steps.length} {...props}>
@@ -42,7 +42,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [140, 620],
     content: (props: any) => (
       <TourContent className="tour_01" total={steps.length} {...props}>
@@ -51,7 +51,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [10, 180],
     content: (props: any) => (
       <TourContent className="tour_01" total={steps.length} {...props}>
@@ -60,7 +60,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [140, 750],
     content: (props: any) => (
       <TourContent className="tour_01" total={steps.length} {...props}>
@@ -69,7 +69,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [130, 860],
     content: (props: any) => (
       <TourContent className="tour_01" total={steps.length} {...props}>
@@ -78,7 +78,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [10, 1320],
     content: (props: any) => (
       <TourContent className="tour_01" total={steps.length} {...props}>
@@ -87,7 +87,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [10, 20],
     content: (props: any) => (
       <TourContent className="tour_01" placement="leftbottom" total={steps.length} {...props}>
@@ -96,7 +96,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [10, 860],
     content: (props: any) => (
       <TourContent className="tour_01" placement="top" total={steps.length} {...props}>
@@ -105,7 +105,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [10, 220],
     content: (props: any) => (
       <TourContent className="tour_01" placement="leftbottom" total={steps.length} {...props}>
@@ -114,7 +114,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [130, 680],
     content: (props: any) => (
       <TourContent className="tour_01" total={steps.length} {...props}>
@@ -123,7 +123,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [10, 20],
     content: (props: any) => (
       <TourContent className="tour_01" placement="bottom"  total={steps.length} {...props}>
@@ -132,7 +132,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [10, 720],
     content: (props: any) => (
       <TourContent className="tour_01" placement="top"  total={steps.length} {...props}>
@@ -141,7 +141,7 @@ const steps = [
     ),
   },
   {
-    selector: '.home-h5',
+    selector: '.guide_h5',
     position: [110, 50],
     content: (props: any) => (
       <TourContent className="tour_01"  placement="bottom"  total={steps.length} {...props}>
