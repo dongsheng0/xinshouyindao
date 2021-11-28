@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+import { Link } from 'react-router-dom'
+
 import "./index.scss"
 import ewm from './img/ewm.png'
 function HomePc (params) {
@@ -13,6 +15,8 @@ function HomePc (params) {
       document.body.removeAttribute('class', 'pc_home_body')
     }
   }, [])
+
+  const [h5Url, setH5Url] = useState('/')
   return (
     <div>
       <div className='home_pc'>
@@ -20,10 +24,24 @@ function HomePc (params) {
           <div class="center-container" style={{height: '821px'}}>
             <div class="qrcode">
               <div class="entrance-wrapper">
-                <div id="personnel-process" site="" class="entrance active">APP端用章截图及流程</div>
-                <div id="new-sign" class="entrance" site="">APP开启物联章桶截图及流程</div>
-                <div id="renew-sign" class="entrance" site="">web发起申请及用章编辑台体验截图及流程</div>
+                <div id="personnel-process" class="entrance" onClick={() => setH5Url('/h5_guide_1')} >
+                    >APP端用章截图及流程
+                </div>
+                {/* <div id="personnel-process" class="entrance" >
+                    <Link to='/h5_guide_1'>APP端用章截图及流程</Link>
+                </div> */}
+                <div id="new-sign" class="entrance" onClick={() => setH5Url('/h5_guide_2')} site="">
+                  APP开启物联章桶截图及流程
+                  </div>
 
+                {/* <div id="new-sign" class="entrance" site="">
+                  <Link to='/h5_guide_2'>APP开启物联章桶截图及流程</Link>
+                </div> */}
+
+                  
+                <div id="renew-sign" class="entrance" site="">
+                    <Link to='/pc_guide'>web发起申请及用章编辑台体验截图及流程</Link>
+                </div>
 
               </div>
               <img src={ewm} alt="" />
@@ -33,7 +51,7 @@ function HomePc (params) {
               <div class="phone" id="phone">
                 <div class="iphoneIframe">
                   <iframe id="demo-iframe" class="iframe" height="100%" width="100%" frameborder="0" scroll="no"
-                    src="img/index.html"></iframe>
+                    src={h5Url}></iframe>
                 </div>
               </div>
 
