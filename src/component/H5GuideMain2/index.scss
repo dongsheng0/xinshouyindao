@@ -1,0 +1,131 @@
+
+
+// 用户引导相关的css放在这里
+
+body{
+  position: relative;
+  margin: 0 auto;
+}
+
+div.zhushou-tour {
+  background-color: transparent;
+  position: absolute;
+  // color: white;
+  font-size: 26px;
+  box-shadow: none;
+  width: 600px;
+  max-width: fit-content;
+  box-sizing: content-box;
+  .first-tour {
+    letter-spacing: -2px;
+    background-size: 100% 100%;
+    width: 640px;
+    padding: 20px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .buttons {
+      margin-top: 0;
+    }
+  }
+  .home-pc-first-step {
+    background-size: 100% 100%;
+    width: 480px;
+    padding: 20px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    div {
+      text-align: center;
+    }
+    .buttons {
+      margin-top: 0;
+    }
+  }
+  .arrow-upright {
+    height: 91px;
+    background-position: right;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    margin-right: -20px;
+  }
+  .arrow-leftup {
+    width: 58px;
+    height: 81px;
+    background-size: 100% 100%;
+    margin-left: -15%;
+  }
+  .with-arrow-left {
+    display: flex;
+    align-items: center;
+    .arrow-left {
+      width: 93px;
+      height: 43px;
+      background-size: 100% 100%;
+      margin: 0 20px;
+    }
+  }
+  strong {
+    position: relative;
+    &::before {
+      content: '';
+      height: 10px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      background-color: #0073fa;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    min-height: 20px;;
+    .button {
+      cursor: pointer;
+      margin-left: 65px;
+      background-size: 100% 100%;
+    }
+  }
+}
+.zhushou-tour-highlighted {
+  stroke-width: 2;
+  stroke: #ffffff;
+  stroke-dasharray: 5;
+}
+
+// ::-webkit-inner-spin-button
+
+
+
+.tourContent-box {
+  font-size: 14px;
+  position: relative;
+  // color: #fff;;
+  // background: rgba(255,255,255, 0.9) !important;
+  width: 300px;
+  .out {
+    position: absolute;
+    bottom: -80px;
+    left: 49px;
+    border-color: #3580fe transparent transparent transparent;
+    border-style: dashed solid dashed dashed;
+    border-width: 20px;
+    transform: scale(1, 2);
+  }
+}
+
+
+// .popover-tips{
+
+//   position: absolute;top: -37.440000000000005px;left: 196.56px;max-width: 276px;word-break: break-all;background: #001330;opacity: 0.8;font-size: 14px;color: white;border-radius: 4px;padding: 8px 12px 10px;text-align: center;z-index: 999;
+//   .popover-in{
+
+//     position: absolute;border: 6px solid transparent;width: 0;height: 0;bottom: -12px;left: 0;right: 0;margin: 0 auto;border-top-color: #001330;
+//   }
+// }
+
