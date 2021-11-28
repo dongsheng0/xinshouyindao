@@ -209,7 +209,7 @@ export const H5GuideMain1 = () => {
       }}
     />
     {
-       <div className="h5-page tour_img_01"><img  src={imgLists[currentStep]} alt=""/></div>
+       <div className="h5_page tour_img_01"><img  src={imgLists[currentStep]} alt=""/></div>
     }
     
     </>
