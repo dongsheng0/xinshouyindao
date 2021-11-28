@@ -11,12 +11,29 @@ import img2 from './img/02.jpeg'
 import img3 from './img/03.jpeg'
 import img4 from './img/04.jpeg'
 import img5 from './img/05.jpeg'
-import img6 from './img/06.jpeg'
+import img6 from './img/06.jpeg' //  06.jpeg 和  07_0 是同一张图
+import img7_0 from './img/07_0.jpeg'
 import img7_1 from './img/07_1.jpeg'
 import img7_2 from './img/07_2.jpeg'
 import img7_3 from './img/07_3.jpeg'
 import img7_4 from './img/07_4.jpeg'
 import img8 from './img/08.jpeg'
+
+
+const imgLists = {
+  0: img1,
+  1: img1,
+  2: img2,
+  3: img3, 
+  4:img4, 
+  5: img5,
+  6: img7_0, 
+  7:img7_1, 
+  8: img7_2, 
+  9: img7_3, 
+  10: img7_4, 
+  11: img8
+}
 const steps = [
   {
     selector: '.home-pc',
@@ -195,48 +212,11 @@ export const PCGuideMain = () => {
       currentStep == 1  && 
       <div className="pc-page  tour_img_01_1"><img  src={img1_gif} alt=""/></div>
     }
-    {
-      currentStep == 2  &&
-       <div className="pc-page  tour_img_02"><img  src={img2} alt=""/></div>
-    }
-    {
-      currentStep == 3  &&
-       <div className="pc-page  tour_img_02"><img  src={img3} alt=""/></div>
-    }
-    {
-      currentStep == 4  &&
-       <div className="pc-page  tour_img_02"><img  src={img4} alt=""/></div>
-    }
-    {
-      currentStep == 5  &&
-       <div className="pc-page  tour_img_02"><img  src={img5} alt=""/></div>
-    }
-    {
-      currentStep == 6  &&
-       <div className="pc-page  tour_img_02"><img  src={img7_1} alt=""/></div>
-    }
+
     
     {
-      currentStep == 7  &&
-       <div className="pc-page  tour_img_02"><img  src={img7_2} alt=""/></div>
-    }
-    {
-      currentStep == 8  &&
-       <div className="pc-page  tour_img_02"><img  src={img7_3} alt=""/></div>
-    }
-    {
-      currentStep == 9  &&
-       <div className="pc-page  tour_img_02"><img  src={img7_4} alt=""/></div>
-    }
-    
-    {
-      currentStep == 10  &&
-       <div className="pc-page  tour_img_02"><img  src={img7_4} alt=""/></div>
-    }
-    
-    {
-      currentStep == 11 &&
-       <div className="pc-page  tour_img_02"><img  src={img8} alt=""/></div>
+      currentStep > 1 && 
+      <div className={`pc-page pc_tour_step_${currentStep}`}><img  src={imgLists[currentStep]} alt=""/></div>
     }
     
     </>
