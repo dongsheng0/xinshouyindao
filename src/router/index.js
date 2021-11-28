@@ -1,5 +1,6 @@
 import Home from '../page/Home/index'
 import HomePc from '../page/Home/Home_pc'
+import Homeh5 from '../page/Home/Home_h5'
 import PcGuide from '../page/PcGuide'
 import H5Guide1 from '../page/H5Guide1'
 import H5Guide2 from '../page/H5Guide2'
@@ -29,9 +30,15 @@ export const userRoutes = [
     component: Home,
   },
   {
-    title: '首页',
+    title: 'pc首页',
     path: '/home_pc',
     exact: true,
     component: HomePc,
+  },
+  {
+    title: 'h5首页',
+    path: '/home_h5',
+    exact: true,
+    component: Homeh5,
   },
 ]

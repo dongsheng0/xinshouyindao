@@ -1,0 +1,85 @@
+
+ #change-sence-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 44px;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+}
+.sence-modal-content {
+  width: calc(100% - 80px);
+  height: 420px;
+  border-radius: 4px;
+  background: #f2f3f4;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.sence-header {
+  width: calc(100% + 2px);
+  background: url('./img/sence-header-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 115px;
+  border-radius: 4px 4px 0 0;
+  padding-top: 22px;
+  position: relative;
+  left: -1px;
+  right: -1px;
+}
+.sence-title {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.change-sence-title {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-bottom: 24px;
+}
+.change-sence-btn {
+  font-size: 16px;
+  color: #2489f2;
+  border: 1px solid #e5e7ea;
+  border-radius: 4px;
+  width: 80%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10% 24px;
+  background: white;
+}
+#mobile-header-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: white;
+}
+#modal-container {
+  width: 80%;
+  position: fixed;
+  top: calc(50% - 50px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+#modal-container img,
+#file-content > img,
+#select-seal > img,
+#sign-password > img,
+#get-sign-sms > img,
+#get-sign-sms-send > img,
+#get-sign-sms-entered > img,
+#select-prove > img {
+  width: 100%;
+}
