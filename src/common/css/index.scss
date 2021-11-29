@@ -45,7 +45,13 @@ body {
       text-align: center;
       line-height: 50px;
       cursor: pointer;
-      font-size: 15px;
+      font-size: 14px;
+      &:active{
+        color:#367fff;
+      }
+      &.disabled{
+        color: #ccc;
+      }
     }
   }
 }

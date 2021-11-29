@@ -40,7 +40,7 @@ const steps = [
     position: [330, 130],
     content: (props: any) => (
       <TourContent className="tour_01" total={steps.length} {...props}>
-        <div>请在此处输入”财务账户管理0“</div>
+        <div>请在此处输入”财务账户管理“</div>
       </TourContent>
     ),
   },
@@ -49,7 +49,7 @@ const steps = [
     position: [670, 130],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
-        <div>输入后请点击“查询”1</div>
+        <div>输入后请点击“查询”</div>
       </TourContent>
     ),
   },
@@ -58,7 +58,7 @@ const steps = [
     position: [733, 550],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
-        <div>填写完成业务描述之后，点击进入下一步2</div>
+        <div>填写完成业务描述之后，点击进入下一步</div>
       </TourContent>
     ),
   },
@@ -67,7 +67,7 @@ const steps = [
     position: [733, 550],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
-        <div>选择了使用的印章之后，点击进入下一步3</div>
+        <div>选择了使用的印章之后，点击进入下一步</div>
       </TourContent>
     ),
   },
@@ -76,7 +76,7 @@ const steps = [
     position: [130, 260],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
-        <div>”用章编辑台“用于将上传的文件和选择好的印章进行关联，点击此处添加盖章文件4</div>
+        <div>”用章编辑台“用于将上传的文件和选择好的印章进行关联，点击此处添加盖章文件</div>
       </TourContent>
     ),
   },
@@ -85,7 +85,7 @@ const steps = [
     position: [690, 444],
     content: (props: any) => (
       <TourContent className="tour_02" total={steps.length} {...props}>
-        <div>文件已添加完成，点击此按钮完成添加5</div>
+        <div>文件已添加完成，点击此按钮完成添加</div>
       </TourContent>
     ),
   },
@@ -94,7 +94,7 @@ const steps = [
     position: [278, 270],
     content: (props: any) => (
       <TourContent className="tour_02"  total={steps.length} {...props}>
-        <div>现在，我们为某个上传的文件，选择要盖的章，先点此文件图标6</div>
+        <div>现在，我们为某个上传的文件，选择要盖的章，先点此文件图标</div>
       </TourContent>
     ),
   },
@@ -104,7 +104,7 @@ const steps = [
     content: (props: any) => (
       // placement="right" 
       <TourContent className="tour_02"  total={steps.length} {...props}>
-        <div>点击文件后选择俩枚印章7</div>
+        <div>点击文件后选择俩枚印章</div>
       </TourContent>
     ),
   },
@@ -113,7 +113,7 @@ const steps = [
     position: [698, 368],
     content: (props: any) => (
       <TourContent className="tour_02"  total={steps.length} {...props}>
-        <div>点击文件后选择俩枚印章8</div>
+        <div>点击文件后选择俩枚印章</div>
       </TourContent>
     ),
   },
@@ -122,7 +122,7 @@ const steps = [
     position: [278, 270],
     content: (props: any) => (
       <TourContent className="tour_02"  total={steps.length} {...props}>
-        <div>此时该文件以和这俩枚印章完成了关联，鼠标点击某个印章可以查看修改名称，修改盖章次数和删除印章9</div>
+        <div>此时该文件以和这俩枚印章完成了关联，鼠标点击某个印章可以查看修改名称，修改盖章次数和删除印章</div>
       </TourContent>
     ),
   },
@@ -186,15 +186,9 @@ export const PCGuideMain = () => {
       showNavigation={false}
       getCurrentStep={(cur) => {
         setCurrentStep(cur)
-        // if(cur === 11) {
-        //   Toast.show({
-        //     content: '完成了，回到第一步',
-        //     afterClose: () => {
-        //       console.log('after')
-        //     },
-        //   })
-        //   setIsOpen(false)
-        // }
+        if(cur === 12) {
+            history.push(`/pc_guide`)
+        }
         console.log(cur)
         // if (match.url === '/report/authed') {
         //   history.push(

@@ -3,6 +3,8 @@ import React from 'react';
 import { TourNavigation } from './TourNavigation';
 
 import { Popover, Button, Toast } from 'antd-mobile';
+import { Redirect, useHistory, useLocation, useRouteMatch } from 'react-router'
+
 interface TourContentProps {
   step: number;
   total: number;
@@ -24,6 +26,7 @@ export const TourContent: React.FC<TourContentProps> = ({
   style,
   className,
 }) => {
+  const history = useHistory()
   return (
     <>
       <div id="tourContent-box" className="tourContent-box">
@@ -34,11 +37,22 @@ export const TourContent: React.FC<TourContentProps> = ({
           mode={'dark'}
           placement={placement}
         >
-          <div>
-            <div className="pointer-nav" onClick={() => goTo(step)}>
+          <div className="pointer-nav" onClick={() =>
+            {
+              if (total === step ) {
+                Toast.show({
+                  content: '流程全部完成',
+                  afterClose: () => {
+                    history.push(`/home_pc`)
+                  },
+                })
+              } else {
+                goTo(step)
+              }
+            }}
+            >
               <div className="round-point"></div>
             </div>
-          </div>
         </Popover>
         <TourNavigation step={step} goTo={goTo} total={total} close={close} />
       </div>
