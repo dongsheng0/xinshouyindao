@@ -1,6 +1,6 @@
 
 
-html,body {text-align:left;font-size:12px !important;font-family: PingFangSC-Regular,Hiragino Sans GB, Microsoft YaHei;height:100%}
+html,body {text-align:left; font-size:12px;font-family: PingFangSC-Regular,Hiragino Sans GB, Microsoft YaHei;height:100%}
 html,body,img,form,textarea,input,fieldset,div,p,div,ul,li,ol,dl,dt,dd,
 h1,h2,h3,h4,h5,h6,pre,code{margin:0;padding:0}
 ul,li{list-style:none}
@@ -19,7 +19,9 @@ a{text-decoration:none;font-weight:normal;font-family:inherit}
 .wrap pre{margin-top:30px;overflow-x:auto;border:1px solid #E5E5E5;padding:20px;border-radius:2px}
 // #root {height: 100% !important}
 // #root, #root > div, #root > section {height: 100%}
-
+body{
+  font-size:12px
+}
 
 ::-webkit-scrollbar {
   width: 12px;

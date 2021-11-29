@@ -221,9 +221,23 @@ div.zhushou-tour {
   position: absolute;
   z-index: 999999;
   width: 300px;
+  height: 50px;
 }
 
-// 点击按钮的动效 
+.tour_content_h5{
+  .pointer-nav {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    transform: translate(0, 0px);
+  }
+}
+
+
+// pc- 点击按钮的动效 
 .pointer-nav {
   position: absolute;
   bottom: -121px;

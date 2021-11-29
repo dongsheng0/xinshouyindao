@@ -37,7 +37,7 @@ export const TourContent: React.FC<TourContentProps> = ({
   const history = useHistory()
 
   return ReactDOM.createPortal(
-    <div id="tourContent-box" className={`tourContent-box tour_content_${step}`} style={{...position, width: width + 'px'}}>
+    <div id="tourContent-box" className={`tour_content_h5 tourContent-box tour_content_${step}`} style={{...position, width: width}}>
         <Popover
           content={children}
           getContainer={() => document.getElementById('tourContent-box')}
