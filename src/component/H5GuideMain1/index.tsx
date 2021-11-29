@@ -34,7 +34,7 @@ const steps = [
   },
   {
     selector: '.guide_h5',
-    position: [30, 920],
+    position: [30, 1000],
     content: (props: any) => (
       <TourContent className="tour_01" total={steps.length} {...props}>
         <div>发起流程过程中首先说明要办理什么业务，输入完毕后，点击进入下一环节01</div>

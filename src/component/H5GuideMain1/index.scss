@@ -7,92 +7,14 @@ body{
   width: auto;
   margin: 0 auto;
 }
-div.zhushou-tour {
-  background-color: transparent;
-  position: absolute;
-  // color: white;
-  font-size: 26px;
-  box-shadow: none;
-  width: 600px;
-  max-width: fit-content;
-  box-sizing: content-box;
-  .first-tour {
-    letter-spacing: -2px;
-    background-size: 100% 100%;
-    width: 640px;
-    padding: 20px;
-    height: 310px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    .buttons {
-      margin-top: 0;
-    }
-  }
-  .guide_pc-first-step {
-    background-size: 100% 100%;
-    width: 480px;
-    padding: 20px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    div {
-      text-align: center;
-    }
-    .buttons {
-      margin-top: 0;
-    }
-  }
-  .arrow-upright {
-    height: 91px;
-    background-position: right;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    margin-right: -20px;
-  }
-  .arrow-leftup {
-    width: 58px;
-    height: 81px;
-    background-size: 100% 100%;
-    margin-left: -15%;
-  }
-  .with-arrow-left {
-    display: flex;
-    align-items: center;
-    .arrow-left {
-      width: 93px;
-      height: 43px;
-      background-size: 100% 100%;
-      margin: 0 20px;
-    }
-  }
-  strong {
-    position: relative;
-    &::before {
-      content: '';
-      height: 10px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      background-color: #0073fa;
-      bottom: 0;
-      z-index: -1;
-    }
-  }
-  
-}
-.zhushou-tour-highlighted {
-  stroke-width: 2;
-  stroke: #ffffff;
-  stroke-dasharray: 5;
-}
+
+
 
 // ::-webkit-inner-spin-button
 
 
 .tourContent-box {
-  font-size: 14px;
+  font-size: 12px;
   position: relative;
   // color: #fff;;
   // background: rgba(255,255,255, 0.9) !important;
