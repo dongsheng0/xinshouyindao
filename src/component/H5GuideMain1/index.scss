@@ -80,17 +80,7 @@ div.zhushou-tour {
       z-index: -1;
     }
   }
-  .buttons {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 25px;
-    min-height: 20px;;
-    .button {
-      cursor: pointer;
-      margin-left: 65px;
-      background-size: 100% 100%;
-    }
-  }
+  
 }
 .zhushou-tour-highlighted {
   stroke-width: 2;
@@ -99,7 +89,6 @@ div.zhushou-tour {
 }
 
 // ::-webkit-inner-spin-button
-
 
 
 .tourContent-box {
