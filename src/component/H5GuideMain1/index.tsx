@@ -312,6 +312,12 @@ export const H5GuideMain1 = () => {
           // }
         }}
       />
+
+      <div style={{display: 'none'}}>
+      {
+        Object.keys(imgLists).map((i) => <img  src={imgLists[i]} alt=""/>)
+      }
+    </div>
       {
         <div className="h5_page tour_img_01">
           <img src={imgLists[currentStep]} alt="" />

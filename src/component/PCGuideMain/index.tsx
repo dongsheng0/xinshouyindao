@@ -197,6 +197,11 @@ export const PCGuideMain = () => {
         // }
       }}
     />
+    <div style={{display: 'none'}}>
+      {
+        Object.keys(imgLists).map((i) => <img  src={imgLists[i]} alt=""/>)
+      }
+    </div>
     {
       (currentStep == 0 || currentStep == 1) &&
        <div className="pc-page tour_img_01"><img  src={img1} alt=""/></div>
