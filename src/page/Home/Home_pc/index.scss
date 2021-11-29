@@ -69,10 +69,20 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    a {
+      color: #fff;
+      &:active{
+        border: 1px solid #0084de;
+        background:#0084DE;
+      }
+    }
   }
   .entrance.active {
     border: 1px solid #0084de;
-    background: #0084de;
+    background:#0084DE;
+    a {
+      color: #fff;
+    }
   }
 
   .qrcode img {

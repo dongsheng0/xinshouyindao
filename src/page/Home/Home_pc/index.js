@@ -20,6 +20,8 @@ function HomePc (params) {
   }, [])
 
   const [h5Url, setH5Url] = useState(h5_guide_1_url)
+  const [active1, setActive1] = useState(true)
+  const [active2, setActive2] = useState(false)
   return (
     <div>
       <div className='home_pc'>
@@ -27,14 +29,24 @@ function HomePc (params) {
           <div className="center-container" style={{height: '821px'}}>
             <div className="qrcode">
               <div className="entrance-wrapper">
-                <div id="personnel-process" className="entrance" onClick={() => setH5Url(h5_guide_1_url)} >
+                <div id="personnel-process" className= {active1 ? 'entrance active' : 'entrance'} onClick={() => {
+                  setH5Url(h5_guide_1_url)
+                  setActive1(true)
+                  setActive2(false)
+                }} >
                     APP端用章截图及流程
                 </div>
                 {/* <div id="personnel-process" className="entrance" >
                     <Link to='/h5_guide_1'>APP端用章截图及流程</Link>
                 </div> */}
-                <div id="new-sign" className="entrance" onClick={() => setH5Url(h5_guide_2_url)} site="">
-                  APP开启物联章桶截图及流程
+                <div id="new-sign" className= {active2 ? 'entrance active' : 'entrance'} onClick={() => 
+                  {
+                    // setH5Url(h5_guide_2_url)
+                    setActive1(false)
+                    setActive2(true)
+                  }
+                  } site="">
+                    APP开启物联章桶截图及流程
                   </div>
 
                 {/* <div id="new-sign" className="entrance" site="">
