@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 
 import "./index.scss"
 import ewm from './img/ewm.png'
+
+const h5_guide_1_url =  '/h5_guide_1?from=pcIframe'
+const h5_guide_2_url =  '/h5_guide_2?from=pcIframe'
 function HomePc (params) {
   useEffect(() => {
     document.body.removeAttribute('class', 'pc_guide_body')
@@ -16,7 +19,7 @@ function HomePc (params) {
     }
   }, [])
 
-  const [h5Url, setH5Url] = useState('/')
+  const [h5Url, setH5Url] = useState(h5_guide_1_url)
   return (
     <div>
       <div className='home_pc'>
@@ -24,13 +27,13 @@ function HomePc (params) {
           <div className="center-container" style={{height: '821px'}}>
             <div className="qrcode">
               <div className="entrance-wrapper">
-                <div id="personnel-process" className="entrance" onClick={() => setH5Url('/h5_guide_1')} >
+                <div id="personnel-process" className="entrance" onClick={() => setH5Url(h5_guide_1_url)} >
                     APP端用章截图及流程
                 </div>
                 {/* <div id="personnel-process" className="entrance" >
                     <Link to='/h5_guide_1'>APP端用章截图及流程</Link>
                 </div> */}
-                <div id="new-sign" className="entrance" onClick={() => setH5Url('/h5_guide_2')} site="">
+                <div id="new-sign" className="entrance" onClick={() => setH5Url(h5_guide_2_url)} site="">
                   APP开启物联章桶截图及流程
                   </div>
 

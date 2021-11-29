@@ -1,8 +1,10 @@
 // @ts-nocheck
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import ReactDOM from 'react-dom'
 import { Badge, TabBar } from 'antd-mobile'
 import { LeftOutline, RightOutline } from 'antd-mobile-icons'
+
+import { Redirect, useHistory, useLocation, useRouteMatch } from 'react-router'
 
 
 interface TourNavigationProps {
@@ -12,19 +14,6 @@ interface TourNavigationProps {
   close: () => void
 }
 
-const tabs = [{
-    key: 'pre',
-    title: '上一步',
-  },
-  {
-    key: 'all',
-    title: '选择流程',
-  },
-  {
-    key: 'next',
-    title: '下一步',
-  },
-]
 
 export const TourNavigation: React.FC<TourNavigationProps> = ({
   step,
@@ -32,7 +21,14 @@ export const TourNavigation: React.FC<TourNavigationProps> = ({
   goTo,
   close,
 }) => {
-  
+
+  const history = useHistory()
+  const [isShowInPc, setIsShowInPc] = useState(false)
+  useEffect(() => {
+    if(history.location.search.includes('pcIframe')) {
+      setIsShowInPc(true)
+    }
+  }, [])
   return ReactDOM.createPortal(
        <div className="buttons">
          {step > 1 ? (
@@ -44,11 +40,13 @@ export const TourNavigation: React.FC<TourNavigationProps> = ({
          <LeftOutline />  上一步
         </div>
         }
-
-        <div className="button">
-            切换场景
-        </div>
-
+        {
+          !isShowInPc && 
+           <div className="button"  onClick={() => history.push('/home_h5')}>
+           切换场景
+       </div>
+        }
+       
         {step < total && (
           <div className="button button-next"  onClick={() => goTo(step)}>
             下一步 <RightOutline />

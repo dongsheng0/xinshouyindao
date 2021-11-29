@@ -1,5 +1,5 @@
 // @ts-nocheck
-import React from 'react';
+import React, {useEffect} from 'react';
 import { TourNavigation } from './TourNavigation';
 import ReactDOM from 'react-dom'
 
@@ -30,6 +30,9 @@ export const TourContent: React.FC<TourContentProps> = ({
   position
 }) => {
 
+  useEffect(() => {
+    
+  }, [])
   return ReactDOM.createPortal(
     <div id="tourContent-box" className={`tourContent-box tour_content_${step}`} style={{...position, width: width + 'px'}}>
         <Popover
