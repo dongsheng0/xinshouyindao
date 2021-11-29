@@ -183,6 +183,11 @@ div.zhushou-tour {
   height: 100%;
 }
 
+
+
+
+
+
 // 气泡背景色
 // .jGVibm{
 //     background-color: transparent !important;
@@ -203,28 +208,34 @@ div.zhushou-tour {
 
 
 
+.tourContent-box {
+  font-size: 12px;
+  position: absolute;
+  z-index: 999999;
+  width: 300px;
+}
 
-
-// 点击按钮的动效
+// 点击按钮的动效 
 .pointer-nav {
   position: absolute;
   bottom: -121px;
   left: 150px;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   padding: 30px;
   transform: translate(-50%, -50%);
   z-index: 3000;
   cursor: pointer;
+  .round-point {
+    width: 40px;
+    height: 40px;
+    background-position: 0 0;
+    background-image: url(../../common/img/cursor.png);
+    animation: guideToClick 1.2s steps(1) 0s infinite;
+  }
 }
 
-.round-point {
-  width: 40px;
-  height: 40px;
-  background-position: 0 0;
-  background-image: url(../../common/img/cursor.png);
-  animation: guideToClick 1.2s steps(1) 0s infinite;
-}
+
 
 
 

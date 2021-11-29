@@ -25,9 +25,9 @@ const imgLists = [img0, img1, img2, img3, img4, img5, img6, img7, img8, img9, im
 const steps = [
   {
     selector: '.guide_h5',
-    position: [-130, 220],
+    // position: [-130, 220],
     content: (props: any) => (
-      <TourContent className="tour_01" total={steps.length} {...props}>
+      <TourContent className="tour_01" total={steps.length} {...props} width='400' placement="right" position={{'left': '-106px', 'top': '255px'}}>
         <div>在产品首页点击”发起申请“按钮，进入发起用借章申请的流程(体验流程以用章为准)00</div>
       </TourContent>
     ),

@@ -2,7 +2,7 @@
 import React from 'react';
 import { TourNavigation } from './TourNavigation';
 
-import { Popover, Button, Toast } from 'antd-mobile'
+import { Popover, Button, Toast } from 'antd-mobile';
 interface TourContentProps {
   step: number;
   total: number;
@@ -26,22 +26,22 @@ export const TourContent: React.FC<TourContentProps> = ({
 }) => {
   return (
     <>
-  <div id="tourContent-box" className="tourContent-box">          
-  <Popover
-        content={children}
-        getContainer = {() => document.getElementById('tourContent-box')}
-        visible
-        mode={'dark'}
-        placement={placement}>
-        <div>
-          <div className="pointer-nav" onClick={() => goTo(step)}>
-            <div className="round-point"></div>
+      <div id="tourContent-box" className="tourContent-box">
+        <Popover
+          content={children}
+          getContainer={() => document.getElementById('tourContent-box')}
+          visible
+          mode={'dark'}
+          placement={placement}
+        >
+          <div>
+            <div className="pointer-nav" onClick={() => goTo(step)}>
+              <div className="round-point"></div>
+            </div>
           </div>
-        </div>
-      </Popover>
-      <TourNavigation step={step} goTo={goTo} total={total} close={close} />
-
-</div>
+        </Popover>
+        <TourNavigation step={step} goTo={goTo} total={total} close={close} />
+      </div>
       {/* <div className="tourContent-box" id="tourContent-box">
        <div className={className} style={{ ...style }}>
           {children}
@@ -59,11 +59,8 @@ export const TourContent: React.FC<TourContentProps> = ({
             <div className="round-point"></div>
           </div>
         </div> */}
-    
-    
+
       {/* </div>  */}
-      
-      
     </>
   );
 };

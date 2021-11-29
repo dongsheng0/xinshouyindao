@@ -1,6 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 import { TourNavigation } from './TourNavigation';
+import ReactDOM from 'react-dom'
 
 import { Popover, Button, Toast } from 'antd-mobile';
 interface TourContentProps {
@@ -10,7 +11,9 @@ interface TourContentProps {
   goTo: (step: number) => void;
   close: () => void;
   style: any;
+  width?: any;
   className: string;
+  position: any;
 }
 
 export const TourContent: React.FC<TourContentProps> = ({
@@ -22,11 +25,13 @@ export const TourContent: React.FC<TourContentProps> = ({
   total,
   children,
   style,
+  width,
   className,
+  position
 }) => {
-  return (
-    <>
-      <div id="tourContent-box" className="tourContent-box">
+
+  return ReactDOM.createPortal(
+    <div id="tourContent-box" className={`tourContent-box tour_content_${step}`} style={{...position, width: width + 'px'}}>
         <Popover
           content={children}
           getContainer={() => document.getElementById('tourContent-box')}
@@ -34,14 +39,12 @@ export const TourContent: React.FC<TourContentProps> = ({
           mode={'dark'}
           placement={placement}
         >
-          <div>
-            <div className="pointer-nav" onClick={() => goTo(step)}>
-              <div className="round-point"></div>
-            </div>
+          <div className="pointer-nav" onClick={() => goTo(step)}>
+            <div className="round-point"></div>
           </div>
         </Popover>
         <TourNavigation step={step} goTo={goTo} total={total} close={close} />
-      </div>
-    </>
-  );
+      </div>,
+      document.body
+  )
 };
