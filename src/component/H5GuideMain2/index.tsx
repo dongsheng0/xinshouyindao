@@ -7,53 +7,106 @@ import { TourContent } from './TourContent'
 
 
 
-const imgLists = []
 const steps = [
   {
     selector: '.guide_h5',
-    position: [-130, 290],
+    className: "h5_tour_0",
     content: (props: any) => (
-      <TourContent className="tour_01" total={steps.length} {...props} 
-      width="400"
-      placement="right"
-      position={{ left: '-106px', top: '255px' }}
+      <TourContent  
+        {...props} 
+        total={steps.length}
+        width="5.263rem"
+        placement="right"
+        position={{ left: '0.1rem', top: '4.74rem' }}
       >
-        <div>当您的待办中有有可以启动盖印来盖章的申请时，可点击APP首页的“快速启动盖印”操作来查看</div>
+        <div>当您的待办中有有可以启动盖印来盖章的申请时，可点击APP首页的“快速启动盖印”操作来查看1</div>
       </TourContent>
     ),
   },
   {
     selector: '.guide_h5',
-    // position: [100, 110],
+    className: "h5_tour_1",
     content: (props: any) => (
-      <TourContent className="tour_01" total={steps.length} {...props} 
-      width="200"
-      placement="right"
-      position={{ left: '-106px', top: '255px' }}>
-        <div>点击启动盖印</div>
+      <TourContent
+        {...props} 
+        total={steps.length}
+        width="5.263rem"
+        placement="right"
+        position={{ left: '0.1rem', top: '4.74rem' }}>
+        <div>点击启动盖印2</div>
       </TourContent>
     ),
   },
   {
     selector: '.guide_h5',
-    // position: [100, 110],
+    className: "h5_tour_2",
     content: (props: any) => (
-      <TourContent className="tour_01" total={steps.length} {...props}>
+      <TourContent
+        {...props} 
+        total={steps.length}
+        width="5.263rem"
+        placement="right"
+        position={{ left: '0.1rem', top: '4.74rem' }}>
       </TourContent>
     ),
   },
   {
     selector: '.guide_h5',
-    // position: [100, 110],
+    className: "h5_tour_3",
     content: (props: any) => (
-      <TourContent className="tour_01" total={steps.length} {...props} 
-      width="200"
-      placement="right"
-      position={{ left: '-106px', top: '255px' }}>
-        <div>点击启动盖印</div>
+      <TourContent
+        {...props} 
+        total={steps.length}
+        width="5.263rem"
+        placement="right"
+        position={{ left: '0.1rem', top: '4.74rem' }}>
+        <div>自定义，3个描述</div>
       </TourContent>
     ),
   },
+  {
+    selector: '.guide_h5',
+    className: "h5_tour_4",
+    content: (props: any) => (
+      <TourContent
+        {...props} 
+        total={steps.length}
+        width="5.263rem"
+        placement="right"
+        position={{ left: '0.1rem', top: '4.74rem' }}>
+        <div>点击启动盖印4</div>
+      </TourContent>
+    ),
+  },
+  {
+    selector: '.guide_h5',
+    className: "h5_tour_5",
+    content: (props: any) => (
+      <TourContent
+        {...props} 
+        total={steps.length}
+        width="5.263rem"
+        placement="right"
+        position={{ left: '0.1rem', top: '4.74rem' }}>
+        <div>提前结束</div>
+      </TourContent>
+    ),
+  },
+  {
+    selector: '.guide_h5',
+    className: "h5_tour_6",
+    content: (props: any) => (
+      <TourContent
+        {...props} 
+        total={steps.length}
+        width="5.263rem"
+        placement="right"
+        position={{ left: '0.1rem', top: '4.74rem' }}>
+        <div>最后以一步，全部完成</div>
+      </TourContent>
+    ),
+  },
+  
 ]
 
 /**
@@ -74,6 +127,7 @@ export const H5GuideMain2 = () => {
     // setShouldShowGuide(false)
     history.push(`${location.pathname}`)
   }
+
 
   // 如果应该进入引导流程，但是URL里没有参数，增加参数，调整URL
   // if (shouldShowGuide && !showGuide && match.url === '/report/authed') {
@@ -118,11 +172,7 @@ export const H5GuideMain2 = () => {
       }}
     />
     
-    {/* <div id="gaizhang"> 
-      <img className="gaizhang_img" src={imgZhang} alt=""/>
-      <span className="last_number">剩余：2</span>
-      <span className="all_number">总计：5</span>
-    </div> */}
+   
     {/* <Dialog
         visible={visible}
         content='sss'
