@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom'
 
 import "./index.scss"
 import ewm from './img/ewm.png'
-
-const h5_guide_1_url =  '/h5_guide_1?from=pcIframe'
-const h5_guide_2_url =  '/h5_guide_2?from=pcIframe'
+const h5_guide_1_url =  '/#/h5_guide_1?from=pcIframe'
+const h5_guide_2_url =  '/#/h5_guide_2?from=pcIframe'
 function HomePc (params) {
   useEffect(() => {
     document.body.removeAttribute('class', 'pc_guide_body')

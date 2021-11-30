@@ -25,16 +25,18 @@ function GuideH5(params) {
             </div>
             <div id="new-sign" className="change-sence-btn">
                 APP开启物联章桶截图及流程
-              {/* <Link to='/h5_guide_2'>APP开启物联章桶截图及流程</Link> */}
+              {/* <Link to='#/h5_guide_2'>APP开启物联章桶截图及流程</Link> */}
             </div>
-            <div id="renew-sign" className="change-sence-btn" onClick={() => 
-              Toast.show({
-                content: '请用PC进行WEB体验',
-                afterClose: () => {
-                  console.log('after')
-                },
-              })
-            }>
+            <div  className="change-sence-btn"
+              onClick={() =>
+                Toast.show({
+                  content: '请用PC进行WEB体验',
+                  afterClose: () => {
+                    console.log('after')
+                  },
+                })
+              }
+             >
                web体验截图及流程
             </div>
           </div>
