@@ -48,7 +48,7 @@ const steps = [
         {...props}
         width="5.263rem"
         placement="right"
-        position={{ left: '0.1rem', top: '5.173rem' }}
+        position={{ left: '0.1rem', top: '4.74rem' }}
       >
         <div>
           在产品首页点击”发起申请“按钮，进入发起用借章申请的流程(体验流程以用章为准)
@@ -89,7 +89,7 @@ const steps = [
       <TourContent className="tour_01" total={steps.length} {...props}
         width="3rem"
         placement="top"
-        position={{ left: '2.6rem', top: '4.5rem' }}>
+        position={{ left: '2.6rem', top: '4.1rem' }}>
         <div>点击添加一个用章文件</div>
       </TourContent>
     ),
@@ -114,7 +114,7 @@ const steps = [
         placement="topleft"
         width="2.87rem"
         placement="top"
-        position={{ left: '4.1rem', bottom: '1rem' }}>
+        position={{ left: '4.1rem', bottom: '0.9rem' }}>
         <div>添加好要盖章的文件并选择好需要的印章之后，点击进入下一环节</div>
       </TourContent>
     ),
@@ -127,7 +127,7 @@ const steps = [
         placement="top"
         width="2.6rem"
         placement="top"
-        position={{ left: '4.5rem', bottom: '1rem' }}>
+        position={{ left: '4.5rem', bottom: '0.9rem' }}>
         <div>
           在发起前，用户可以确认一遍刚才填写的所有内容，确认无误后即可发布
         </div>
@@ -193,7 +193,7 @@ const steps = [
       <TourContent className="tour_01" total={steps.length} {...props}
         placement="bottom"
         width="2.58rem"
-        position={{ left: '4.5rem', top: '13.3rem' }}
+        position={{ left: '4.5rem', top: '12.9rem' }}
       >
         <div>
           用章环节中，设计本申请的各个印章管理员要分别各自的章操作。点击此处，直接完成印章管理员盖章环节
@@ -229,7 +229,7 @@ const steps = [
         {...props}
         width="3.5rem"
         placement="bottom"
-        position={{ left: '2.7rem', top: '13.2rem' }}>
+        position={{ left: '2.7rem', top: '12.9rem' }}>
         <div>
           为满足业务闭环和文件错档等需要，申请完成后要求发起者将文件的盖章照片全部上传，点击直接完成照片的上传操作
         </div>
@@ -246,7 +246,7 @@ const steps = [
         {...props}
         width="2rem"
         placement="bottom"
-        position={{ right: '0.1rem', top: '1.7rem' }}>
+        position={{ right: '0.1rem', top: '1.3rem' }}>
         <div>全部文件的盖章照片上传完成后，此申请请最终标记为完成</div>
       </TourContent>
     ),
