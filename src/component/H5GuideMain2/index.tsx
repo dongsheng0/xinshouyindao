@@ -7,6 +7,17 @@ import { TourContent } from './TourContent'
 
 
 
+
+/**
+ * 主流程引导
+ */
+export const H5GuideMain2 = () => {
+  const match = useRouteMatch()
+  const history = useHistory()
+  const location = useLocation()
+  const [lastNumber, setLastNumber] = useState(4)
+
+
 const steps = [
   {
     selector: '.guide_h5',
@@ -17,9 +28,9 @@ const steps = [
         total={steps.length}
         width="5.263rem"
         placement="right"
-        position={{ left: '0.1rem', top: '4.74rem' }}
+        position={{ left: '0.1rem', top: '6.74rem' }}
       >
-        <div>当您的待办中有有可以启动盖印来盖章的申请时，可点击APP首页的“快速启动盖印”操作来查看1</div>
+        <div>当您的待办中有有可以启动盖印来盖章的申请时，可点击APP首页的“快速启动盖印”操作来查看</div>
       </TourContent>
     ),
   },
@@ -30,32 +41,22 @@ const steps = [
       <TourContent
         {...props} 
         total={steps.length}
-        width="5.263rem"
-        placement="right"
-        position={{ left: '0.1rem', top: '4.74rem' }}>
-        <div>点击启动盖印2</div>
+        width="3rem"
+        placement="bottom"
+        position={{ right: '0.1rem', top: '3.34rem' }}>
+        <div>点击启动盖印</div>
       </TourContent>
     ),
   },
+  
   {
     selector: '.guide_h5',
     className: "h5_tour_2",
     content: (props: any) => (
       <TourContent
         {...props} 
-        total={steps.length}
-        width="5.263rem"
-        placement="right"
-        position={{ left: '0.1rem', top: '4.74rem' }}>
-      </TourContent>
-    ),
-  },
-  {
-    selector: '.guide_h5',
-    className: "h5_tour_3",
-    content: (props: any) => (
-      <TourContent
-        {...props} 
+        lastNumber = {lastNumber}
+        updateLastNumber = {updateLastNumber}
         total={steps.length}
         width="5.263rem"
         placement="right"
@@ -66,15 +67,33 @@ const steps = [
   },
   {
     selector: '.guide_h5',
+    className: "h5_tour_3",
+    content: (props: any) => (
+      <TourContent
+        {...props} 
+        lastNumber = {lastNumber}
+        updateLastNumber = {updateLastNumber}
+        total={steps.length}
+        width="2.263rem"
+        placement="bottom"
+        position={{ right: '1.1rem', top: '3.34rem' }}>
+        <div>暂停盖印后，该代办的“剩余次数/总计次数”数字刷新，点击可再次启动盖印</div>
+      </TourContent>
+    ),
+  },
+  {
+    selector: '.guide_h5',
     className: "h5_tour_4",
     content: (props: any) => (
       <TourContent
         {...props} 
+        lastNumber = {lastNumber}
+        updateLastNumber = {updateLastNumber}
         total={steps.length}
-        width="5.263rem"
-        placement="right"
-        position={{ left: '0.1rem', top: '4.74rem' }}>
-        <div>点击启动盖印4</div>
+        width="3.263rem"
+        placement="bottom"
+        position={{ left: '4rem', top: '7.2rem' }}>
+        <div>点击提前结束此物联印章操作</div>
       </TourContent>
     ),
   },
@@ -85,43 +104,22 @@ const steps = [
       <TourContent
         {...props} 
         total={steps.length}
-        width="5.263rem"
-        placement="right"
-        position={{ left: '0.1rem', top: '4.74rem' }}>
-        <div>提前结束</div>
-      </TourContent>
-    ),
-  },
-  {
-    selector: '.guide_h5',
-    className: "h5_tour_6",
-    content: (props: any) => (
-      <TourContent
-        {...props} 
-        total={steps.length}
-        width="5.263rem"
-        placement="right"
-        position={{ left: '0.1rem', top: '4.74rem' }}>
-        <div>最后以一步，全部完成</div>
+        width="3.263rem"
+        placement= "bottom"
+        position={{ left: '2.1rem', top: '3.94rem' }}>
+        <div>结束后，该物联印章在这个申请下的待办就消失了，表示在这个申请下该物联印章的操作完成</div>
       </TourContent>
     ),
   },
   
 ]
 
-/**
- * 主流程引导
- */
-export const H5GuideMain2 = () => {
-  const match = useRouteMatch()
-  const history = useHistory()
-  const location = useLocation()
-  // 是否显示引导
 
+
+  const updateLastNumber = (val) => {
+    setLastNumber(val)
+  }
   const [currentStep, setCurrentStep] = useState(0)
-  const [visible, setVisible] = useState(false)
-  const [delay, setDelay] = useState(1)
-  const [isOpen, setIsOpen] = useState(true)
   // 点击隐藏引导
   const hideTour = () => {
     // setShouldShowGuide(false)
@@ -142,7 +140,7 @@ export const H5GuideMain2 = () => {
       highlightedMaskClassName="zhushou-tour-highlighted"
       disableInteraction
       steps={steps}
-      isOpen={isOpen}
+      isOpen={true}
       onRequestClose={hideTour}
       closeWithMask={false}
       showButtons={false}
@@ -151,9 +149,7 @@ export const H5GuideMain2 = () => {
       showNavigation={false}
       getCurrentStep={(cur) => {
         setCurrentStep(cur)
-        if(cur == 1) {
-          setVisible(true)
-        }
+        
         // if(cur === 11) {
         //   Toast.show({
         //     content: '完成了，回到第一步',
@@ -163,7 +159,6 @@ export const H5GuideMain2 = () => {
         //   })
         //   setIsOpen(false)
         // }
-        console.log(cur)
         // if (match.url === '/report/authed') {
         //   history.push(
         //     `/report/project`

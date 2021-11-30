@@ -24,8 +24,8 @@ function GuideH5(params) {
                  <Link to='/h5_guide_1'>APP端用章截图及流程</Link>
             </div>
             <div id="new-sign" className="change-sence-btn">
-                APP开启物联章桶截图及流程
-              {/* <Link to='#/h5_guide_2'>APP开启物联章桶截图及流程</Link> */}
+                {/* APP开启物联章桶截图及流程 */}
+              <Link to='/h5_guide_2'>APP开启物联章桶截图及流程</Link>
             </div>
             <div  className="change-sence-btn"
               onClick={() =>
