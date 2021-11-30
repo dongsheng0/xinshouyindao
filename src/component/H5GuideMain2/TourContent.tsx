@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { TourNavigation } from './TourNavigation';
 import ReactDOM from 'react-dom';
+import { Redirect, useHistory, useLocation, useRouteMatch } from 'react-router'
 
 import { Popover, Dialog } from 'antd-mobile';
 
@@ -46,6 +47,8 @@ export const TourContent: React.FC<TourContentProps> = ({
   className,
   position,
 }) => {
+  const history = useHistory()
+
   useEffect(() => { }, []);
   const [loading, setLoading] = useState(false)
 
@@ -80,9 +83,11 @@ export const TourContent: React.FC<TourContentProps> = ({
         setLoading(false)
         goTo(2)
       }, 300);
-    } else {
+    } else if(step === total) {
+      history.push('/home_h5')
+    } else  {
       goTo(step)
-    }
+    } 
   }
   
   return ReactDOM.createPortal(

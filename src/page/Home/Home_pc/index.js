@@ -40,7 +40,7 @@ function HomePc (params) {
                 </div> */}
                 <div id="new-sign" className= {active2 ? 'entrance active' : 'entrance'} onClick={() => 
                   {
-                    // setH5Url(h5_guide_2_url)
+                    setH5Url(h5_guide_2_url)
                     setActive1(false)
                     setActive2(true)
                   }
