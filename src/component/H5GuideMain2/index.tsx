@@ -5,6 +5,13 @@ import './index.scss'
 import Tour from 'reactour'
 import { TourContent } from './TourContent'
 
+import img1 from './img/01.jpeg';
+import img2_1 from './img/02_v2.jpeg';
+import img2 from './img/02.jpeg';
+import loading from './img/loading.gif';
+import img4 from './img/04.jpeg';
+import img6 from './img/06.jpeg';
+import img7 from './img/07.jpeg';
 
 
 
@@ -167,26 +174,28 @@ const steps = [
       }}
     />
     
-   
-    {/* <Dialog
-        visible={visible}
-        content='sss'
-        closeOnAction
-        onClose={() => {
-          setVisible(false)
-        }}
-        actions={[[{
-          key: 'confirm',
-          text: '暂停盖章',
-        },
-        {
-          key: 'confirm',
-          text: '提前结束',
-        },]
-          
-        ]}
-      /> */}
+    {/* 预加载，先这样实现，后期优化 */}
+    <div style={{display: 'none'}}>
 
+        {
+          currentStep == 0 && <img src={img1} alt=""/> 
+        }
+        {
+          currentStep == 1 && <img src={img2_1} alt=""/> 
+        }
+        {
+          currentStep == 1 && <img src={img2} alt=""/> 
+        }
+        {
+          currentStep == 2 && <img src={img4} alt=""/>
+        }
+        {
+          currentStep == 3 && <img src={img6} alt=""/>
+        }
+        {
+          currentStep == 3 && <img src={img7} alt=""/>
+        }
+    </div>
     </>
   )
 }
