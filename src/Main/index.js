@@ -18,7 +18,7 @@ const Main = () => {
       {userRoutes.map((item, i) => (
         <Route
           key={i}
-          exact={item.exact}
+          exact
           path={item.path}
           component={item.component}
         />
