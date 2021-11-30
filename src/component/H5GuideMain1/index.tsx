@@ -160,9 +160,9 @@ const steps = [
         placement="top"
         total={steps.length}
         {...props}
-        width="3rem"
+        width="2.6rem"
         placement="top"
-        position={{ left: '3rem', bottom: '1rem' }}>
+        position={{ right: '0.1rem', bottom: '1rem' }}>
         <div>
           审批人可进行同意、拒绝和加签三种操作，点击快速完成全部审批环节
         </div>

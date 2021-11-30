@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import { Link } from 'react-router-dom'
+import { Toast } from 'antd-mobile'
 import './index.scss';
 function GuideH5(params) {
   useEffect(() => {
@@ -26,7 +27,14 @@ function GuideH5(params) {
                 APP开启物联章桶截图及流程
               {/* <Link to='/h5_guide_2'>APP开启物联章桶截图及流程</Link> */}
             </div>
-            <div id="renew-sign" className="change-sence-btn">
+            <div id="renew-sign" className="change-sence-btn" onClick={() => 
+              Toast.show({
+                content: '请用PC进行WEB体验',
+                afterClose: () => {
+                  console.log('after')
+                },
+              })
+            }>
                web体验截图及流程
             </div>
           </div>
