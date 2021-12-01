@@ -35,7 +35,7 @@ const steps = [
         total={steps.length}
         width="5.263rem"
         placement="right"
-        position={{ left: '0.1rem', top: '6.74rem' }}
+        position={{ left: '0.13rem', top: '6.34rem' }}
       >
         <div>当您的待办中有有可以启动盖印来盖章的申请时，可点击APP首页的“快速启动盖印”操作来查看</div>
       </TourContent>
@@ -83,7 +83,7 @@ const steps = [
         total={steps.length}
         width="2.263rem"
         placement="bottom"
-        position={{ right: '1.1rem', top: '3.34rem' }}>
+        position={{ right: '0.18rem', top: '3.34rem' }}>
         <div>暂停盖印后，该代办的“剩余次数/总计次数”数字刷新，点击可再次启动盖印</div>
       </TourContent>
     ),
@@ -99,7 +99,7 @@ const steps = [
         total={steps.length}
         width="3.263rem"
         placement="bottom"
-        position={{ left: '4rem', top: '7.2rem' }}>
+        position={{ left: '4rem', top: '6.6rem' }}>
         <div>点击提前结束此物联印章操作</div>
       </TourContent>
     ),
@@ -113,7 +113,7 @@ const steps = [
         total={steps.length}
         width="3.263rem"
         placement= "bottom"
-        position={{ left: '2.1rem', top: '3.94rem' }}>
+        position={{ left: '2.1rem', top: '3.54rem' }}>
         <div>结束后，该物联印章在这个申请下的待办就消失了，表示在这个申请下该物联印章的操作完成</div>
       </TourContent>
     ),

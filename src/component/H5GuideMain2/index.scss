@@ -7,44 +7,67 @@
   top: 60%;
   right: 0;
   z-index: 999999;
-  width: 200px;
-  height: 80px;
-  border-radius: 40px 0 0 40px;
+  width: 4rem;
+  height: 1.5rem;
+  border-radius: 0.75rem 0 0 0.75rem;
   background-color: #fff;
   color: #fff;
   .gaizhang_img {
     position: absolute;
     left: 0;
     top: 0;
-    width: 65px;
-    margin-left: 15px;
+    width: 1.2rem;
+    margin-left: 0.25rem;
+    &:active{
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+
+    // margin: 0.4em;
+    // padding: 1em;
+    // cursor: pointer;
+    // background: #e1e1e1;
+    // text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    }
   }
-  .all_number{
-    position: absolute;
-    left: 100px;
-    top: 10px;
-  }
-  .last_number{
-    position: absolute;
-    left: 100px;
-    top: 30px;
-  }
+  // .all_number{
+  //   position: absolute;
+  //   left: 100px;
+  //   top: 10px;
+  // }
+  // .last_number{
+  //   position: absolute;
+  //   left: 100px;
+  //   top: 30px;
+  // }
 }
 #zhang_popover{
   position: fixed;
   top: 60%;
-  right: 0;
+  right: -0.19rem;
   z-index: 999999;
-  width: 3.3rem;
-  height: 80px;
+  width: 4rem;
+  height: 1.4rem;
 }
 
+// 显示
 .step5_number{
   position: absolute;
   font-size: 14px;
   text-align: center;
   left: 3.3rem;
-  top: 5.76rem;
+  top: 5.42rem;
   width: 1rem;
   z-index: 999999;
   font-weight: 600;
