@@ -98,11 +98,11 @@ function HomePc (params) {
                         2.使用APP端体验快速启动盖印操作，可直接查看操作者当前允许启动物联章桶盖印的申请单，并直接对物联章桶进行开始盖章、暂停盖章、完成盖章
                       </div>
                       <div className="small" style={{width: '330px', paddingTop:'30px'}}>
-                        <div style={{width:'195px',  overflow:'hidden', float:'left'}}>
-                          <img src={qunerwei} style={{width:'80px', paddingBottom:'10px'}} alt="" /><br />
+                        <div style={{width:'175px',  overflow:'hidden', float:'left'}}>
+                          <img src={qunerwei} style={{width:'80px', paddingBottom:'10px'}} alt="" />
                           扫描二维码，加入群聊，<br />了解更多！
                         </div>
-                        <div style={{width: '130px',  float:'left', overflow:'hidden'}}>
+                        <div style={{width: '150px',  float:'left', overflow:'hidden'}}>
                           产品咨询：<br />
                           韩天阔：18533663028<br />
                           回　昆：0316-2599967
