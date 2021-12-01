@@ -48,7 +48,12 @@ export const TourContent: React.FC<TourContentProps> = ({
   position,
 }) => {
   const history = useHistory()
-
+  const [isShowInPc, setIsShowInPc] = useState(false);
+  useEffect(() => {
+    if (history.location.search.includes('pcIframe')) {
+      setIsShowInPc(true);
+    }
+  }, []);
   useEffect(() => { }, []);
   const [loading, setLoading] = useState(false)
 
@@ -84,7 +89,12 @@ export const TourContent: React.FC<TourContentProps> = ({
         goTo(2)
       }, 300);
     } else if(step === total) {
-      history.push('/home_h5')
+      if(isShowInPc) {
+        window.location.reload()
+        // history.push('/h5_guide_2')
+      } else {
+        history.push('/home_h5')
+      }
     } else  {
       goTo(step)
     } 

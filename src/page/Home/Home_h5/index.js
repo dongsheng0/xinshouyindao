@@ -27,7 +27,7 @@ function GuideH5(params) {
                 {/* APP开启物联章桶截图及流程 */}
               <Link to='/h5_guide_2'>APP开启物联章桶截图及流程</Link>
             </div>
-            <div  className="change-sence-btn"
+            {/* <div  className="change-sence-btn"
               onClick={() =>
                 Toast.show({
                   content: '请用PC进行WEB体验',
@@ -38,7 +38,7 @@ function GuideH5(params) {
               }
              >
                web体验截图及流程
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
