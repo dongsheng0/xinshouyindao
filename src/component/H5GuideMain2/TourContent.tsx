@@ -202,6 +202,7 @@ export const TourContent: React.FC<TourContentProps> = ({
                 placement='right'
               >
                 <div className="pointer-nav"  onClick={() => handelGaizhang()}>
+                  {/* <span class="pointer-img"></span> */}
                   <div className="round-point"></div>
                 </div>
               </Popover>
