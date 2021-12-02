@@ -92,22 +92,21 @@
   color: #bbb;
 }
 
-.dialog_last_number{
-  font-size: 18px;
+
+// 弹框中的数数字
+.dialog_all_number, .dialog_last_number {
+  font-size: 50px;
   text-align: center;
-  left: 2.04rem;
-  top: 5.1rem;
+  top: 4.5rem;
   width: 1rem;
   z-index: 999999;
+ }
+.dialog_last_number{
+  left: 2.04rem;
 
 }
 .dialog_all_number{
-  font-size: 18px;
   right: 1.94rem;
-  top: 5.1rem;
-  width: 1rem;
-  z-index: 999999;
-  text-align: center;
 }
 
 .tour_img_2loading{
