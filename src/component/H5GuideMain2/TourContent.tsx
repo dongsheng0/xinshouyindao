@@ -186,8 +186,6 @@ export const TourContent: React.FC<TourContentProps> = ({
           {/* 盖章的图 */}
           <div id="gaizhang">
             <img className="gaizhang_img" src={imgZhang} alt=""/> 
-            {/* <span className="last_number">剩余：{lastNumber}</span> */}
-            {/* <span className="all_number">总计：5</span> */}
           </div>
           {/* 盖章的提示 */}
           <div
